@@ -1,8 +1,8 @@
 FROM ubuntu:16.04
 
 # add user group, user and make user home dir
-RUN groupadd --gid 1000 yapi && \
-    useradd --uid 1000 --gid yapi --shell /bin/bash --create-home yapi
+RUN groupadd --gid 2000 yapi && \
+    useradd --uid 2000 --gid yapi --shell /bin/bash --create-home yapi
 
 # set pwd to yapi home dir
 WORKDIR /home/yapi
